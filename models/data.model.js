@@ -1,11 +1,11 @@
 const mongoose = require('mongoose')
  
 const temeratureData = new mongoose.Schema({
-    timestamp:{
+    ts:{
         type:String,
         default:null
     },
-    temperature:{
+    val:{
         type:Number,
         default:0
     }

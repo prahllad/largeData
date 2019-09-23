@@ -9,12 +9,7 @@ module.exports = {
             i = 0;
             let length = 100000;
             for (let i = 0; i < data.length;) {
-                if (i < length) {
-                    array.push({ 'timestamp': data[i].ts, 'temperature': data[i].val });
-                    i++;
-
-                }
-                else {
+                    array = data.splice(i,length);               
                     await temeratuer.insertMany(array);
                     array = [];
                     let temp = i;
@@ -22,7 +17,7 @@ module.exports = {
                     length = length + temp;
 
 
-                }
+                
             }
 
 
