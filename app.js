@@ -33,7 +33,7 @@ require('./config/log')(app);
 // error handler
 // require('./ErrorHandler')(app);
 
-const PORT = 3002;
+const PORT = process.env.PORT || 3002;
 app.listen(PORT, () => {
     console.info(`[ApiServer] Listening on Port ${PORT}`);
 });
