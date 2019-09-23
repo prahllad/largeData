@@ -1,0 +1,8 @@
+{
+  "400": {
+    "status": 200,
+    "code": 400,
+    
+    "message": "bad_request"
+  }
+}
