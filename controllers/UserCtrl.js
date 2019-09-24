@@ -26,6 +26,9 @@ module.exports = {
           let obj = { ts: new Date(data[i].ts), temparature: data[i].val };
           yearlyData.push(obj);
         }
+        else{
+          break;
+        }
       }
       let x = 0;
       let minimizedData = [];
