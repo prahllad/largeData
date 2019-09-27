@@ -55,7 +55,7 @@ module.exports = {
         }
       }
       setTimeout(()=>{
-          dbHelper.syncData(data);
+          await dbHelper.syncData(data);
       },1000);
       return res.send({ data: minimizedData, processed: true });
     });
